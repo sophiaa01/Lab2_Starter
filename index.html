@@ -78,7 +78,67 @@
                 </video>
             </section>
         </div>
+
         <hr>
+
+        <h2>Next Meeting Details</h2>
+        <form>
+            <fieldset>
+                <p>Did you attend meeting?</p>
+                <input type="radio">
+                <label>Yes</label>
+                <br>
+                <input type="radio">
+                <label>No</label>
+
+                <br>
+
+                <label>Choose date for next meeting:</label>
+                <input type="date">
+
+                <br>
+
+                <p>What time?</p>
+                <input type="checkbox">
+                <label>9-10</label>
+                <input type="checkbox">
+                <label>10-11</label>
+                <input type="checkbox">
+                <label>11-12</label>
+                <input type="checkbox">
+                <label>12-1</label>
+                <input type="checkbox">
+                <label>1-2</label>
+                <input type="checkbox">
+                <label>2-3</label>
+
+                <br>
+
+                <p>What location?</p>
+                <input list="locations" type="text">
+                    <datalist id="locations">
+                        <option>CSE basement</option>
+                        <option>Library</option>
+                        <option>Other</option>
+                    </datalist>
+                </input>
+
+                <br>
+
+                <label>Which site will you look for datasets?</label>
+                <select>
+                    <option>Kaggle</option>
+                    <option>UCI Machine Learning Repository</option>
+                    <option>Other</option>
+                </select>
+
+                <p>What action items do you want to go over?</p>
+                <textarea>Datasets</textarea>
+
+                <br>
+                <button>Submit</button>
+            </fieldset>
+        </form>
     </main>
 
     <footer>
